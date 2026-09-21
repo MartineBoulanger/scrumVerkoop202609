@@ -1,0 +1,333 @@
+/* Shared additions. All styles are plain CSS; no utility framework required. */
+.toolbar {
+  flex-wrap: wrap;
+  align-items: center;
+}
+.toolbar label {
+  font-size: 0.8rem;
+  display: flex;
+  gap: 0.4rem;
+  align-items: center;
+}
+.age-ok,
+.age-warning,
+.age-danger {
+  display: inline-block;
+  border-radius: 5px;
+  padding: 0.2rem 0.4rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+.age-ok {
+  background: #ecfdf5;
+  color: #047857;
+}
+.age-warning {
+  background: #fff7ed;
+  color: #c2410c;
+}
+.age-danger {
+  background: #fef2f2;
+  color: #b91c1c;
+}
+.module-section {
+  margin-top: 1.25rem;
+}
+.module-actions {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+.module-form {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1.25rem;
+}
+.module-form label {
+  display: grid;
+  gap: 0.35rem;
+  font-size: 0.8125rem;
+}
+.module-form input,
+.module-form textarea,
+.module-select,
+.module-section select {
+  border: 1px solid #e5e7eb;
+  background: white;
+  border-radius: 6px;
+  padding: 0.6rem;
+  font: inherit;
+  max-width: 100%;
+}
+.module-form textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+.module-form button {
+  justify-self: start;
+}
+.module-select {
+  margin: 1rem 0.75rem 0 0;
+  max-width: 100%;
+}
+.ranking-list {
+  list-style: decimal;
+  padding-left: 1.5rem;
+  margin: 1rem 0;
+}
+.ranking-list li {
+  padding: 0.45rem;
+  font-size: 0.875rem;
+}
+.ranking-list strong {
+  float: right;
+}
+.user-row,
+.group-row,
+.review-row {
+  padding: 1rem 0;
+  border-bottom: 1px solid #e5e7eb;
+  font-size: 0.875rem;
+}
+.group-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+.group-options {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin: 0.75rem 0;
+}
+.group-options label {
+  display: flex;
+  gap: 0.35rem;
+  align-items: center;
+}
+.error-notice {
+  background: #fef2f2;
+  color: #b91c1c;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 6px;
+}
+.error-notice button {
+  margin-left: 1rem;
+  text-decoration: underline;
+}
+.revenue-chart {
+  display: flex;
+  gap: 0.5rem;
+  overflow-x: auto;
+  margin-top: 1.5rem;
+  padding-bottom: 0.5rem;
+}
+.chart-column {
+  flex: 1;
+  min-width: 48px;
+  text-align: center;
+  font-size: 0.65rem;
+}
+.chart-column > span {
+  display: block;
+  white-space: nowrap;
+}
+.chart-track {
+  height: 180px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  border-bottom: 1px solid #ddd;
+  margin: 0.5rem 0;
+}
+.chart-bar {
+  width: 65%;
+  background: #78be73;
+  border-radius: 4px 4px 0 0;
+  min-height: 1px;
+}
+.chat-log {
+  min-height: 200px;
+  max-height: 420px;
+  overflow: auto;
+}
+.chat-message {
+  background: #f0f9ef;
+  border-radius: 8px;
+  padding: 0.75rem;
+  margin: 0.75rem 0;
+  font-size: 0.875rem;
+}
+.chat-message time {
+  display: block;
+  color: #6b7280;
+  font-size: 0.7rem;
+}
+.chat-message p {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  margin-top: 0.5rem;
+}
+.module-section details {
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #e5e7eb;
+}
+.module-section summary {
+  cursor: pointer;
+  font-weight: 600;
+}
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+button,
+input,
+select,
+textarea {
+  outline-offset: 3px;
+}
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+button:focus-visible,
+a:focus-visible {
+  outline: 2px solid #4f8d4b;
+}
+/* Original interactive styles moved out of JSX. */
+.login-brand,
+.login-submit,
+.password-submit {
+  background: #abd7a8;
+}
+.login-submit:hover,
+.password-submit:hover {
+  background: #78be73;
+}
+.login-group,
+.quantity-field {
+  font-family: "DM Mono", monospace;
+}
+.login-field:focus,
+.password-field:focus,
+.delivery-select:focus,
+.quantity-field:focus {
+  border-color: #78be73;
+}
+.dashboard-welcome .page-title {
+  font-size: 1.75rem;
+}
+.dashboard-stats .stat-card:last-child .stat-value {
+  font-family: "DM Mono", monospace;
+  font-size: 1.35rem;
+}
+.address-reactivate {
+  border-color: #abd7a8;
+  color: #3a6b37;
+  background: #f0f9ef;
+}
+.address-reactivate:hover {
+  background: #abd7a8;
+}
+.delivery-select {
+  font-family: inherit;
+}
+.inner-table td > span {
+  font-family: "DM Mono", monospace;
+}
+.orders-table td:first-child,
+.orders-table td:nth-child(3) {
+  white-space: nowrap;
+}
+.orders-table td:nth-child(2) {
+  min-width: 145px;
+}
+.data-table tr:focus-visible {
+  outline: 2px solid #78be73;
+  outline-offset: -2px;
+}
+.profile-tabs {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #e5e7eb;
+  margin-bottom: 1.25rem;
+}
+.profile-tabs button {
+  padding: 0.75rem 1rem;
+  border-bottom: 3px solid transparent;
+  font-size: 0.8125rem;
+  color: #6b7280;
+  cursor: pointer;
+}
+.profile-tabs button[aria-selected="true"] {
+  border-bottom-color: #78be73;
+  color: #3a6b37;
+  font-weight: 700;
+}
+[hidden] {
+  display: none !important;
+}
+.faq-entry {
+  padding: 1rem 0;
+  border-bottom: 1px solid #e5e7eb;
+}
+.faq-entry h3 {
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+.faq-entry p {
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+.invoice-preview {
+  margin-bottom: 1.25rem;
+}
+.invoice-preview .module-actions {
+  margin-top: 1rem;
+}
+.invoice-preview a {
+  text-decoration: none;
+}
+.orders-table {
+  min-width: 1180px;
+}
+@media (max-width: 768px) {
+  .profile-tabs button {
+    padding: 0.6rem 0.5rem;
+  }
+}
+.invoice-pages {
+  max-height: 760px;
+  overflow-y: auto;
+  margin-top: 0.75rem;
+  background: #f3f4f6;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  padding: 0.75rem;
+}
+.invoice-pages:empty {
+  display: none;
+}
+.invoice-page {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0 auto 1rem;
+  background: white;
+  box-shadow: 0 1px 4px #0002;
+}
+.invoice-page:last-child {
+  margin-bottom: 0;
+}
+@media (max-width: 768px) {
+  .invoice-pages {
+    max-height: 560px;
+    padding: 0.25rem;
+  }
+}

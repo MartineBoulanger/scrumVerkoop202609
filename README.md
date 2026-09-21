@@ -2,9 +2,14 @@
 
 Refactor van de aangeleverde React/TypeScript-app, uitgebreid met een lokale Node/Express-backend. De groene huisstijl, zijbalk, kaarten, formulieren en tabellen zijn behouden. Alle schermen gebruiken gewone CSS; Tailwind is volledig uit de applicatie en build verwijderd.
 
+Gelieve alle stappen hier te volgen om het project werkend te krijgen!
+In the .env.example staat ook informatie.
+
+Het beste is om het project te clonen in VSC, niet VS.
+
 ## Starten
 
-Gebruik Node.js 22.13 of hoger. Open een terminal in deze map:
+Gebruik Node.js 22.13 of hoger (liefst 24 sinds dat de LTS versie is). Open een terminal in deze map:
 
 ```sh
 npm ci
@@ -17,8 +22,6 @@ macOS/Linux:
 ```sh
 ADMIN_PASSWORD='PersoneelVanPrularia' npm run dev
 ```
-
-You get int the shell, type exit and press enter, and your local environment will start to run.
 
 PowerShell:
 

@@ -30,7 +30,7 @@ $env:ADMIN_PASSWORD='PersoneelVanPrularia'
 npm run dev
 ```
 
-Open http://127.0.0.1:5173 en meld aan als `admin` met uw eigen wachtwoord. Latere starts: `npm run dev`. De oude hardcoded accounts en wachtwoorden zijn verwijderd. De beheerder kan medewerkers aanmaken bij **Gebruikers**.
+Open http://127.0.0.1:5173 en meld aan als `admin` of als `website.medewerker` met uw eigen wachtwoord (zie ook the .env.example file). Latere starts: `npm run dev`. De oude hardcoded accounts en wachtwoorden zijn verwijderd. De beheerder kan medewerkers aanmaken bij **Gebruikers**.
 
 ```sh
 npm test

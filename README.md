@@ -20,13 +20,12 @@ Stel bij de **eerste start** een eigen beheerderswachtwoord in (minimaal 12 teke
 macOS/Linux:
 
 ```sh
-ADMIN_PASSWORD='PersoneelVanPrularia' npm run dev
+npm run dev
 ```
 
 PowerShell:
 
 ```powershell
-$env:ADMIN_PASSWORD='PersoneelVanPrularia'
 npm run dev
 ```
 

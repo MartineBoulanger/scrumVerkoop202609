@@ -4,7 +4,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "concurrently -k \"node --import tsx server/index.ts\" \"vite --host 127.0.0.1\"",
+    "dev": "ADMIN_PASSWORD='PersoneelVanPrularia' concurrently -k \"node --import tsx server/index.ts\" \"vite --host 127.0.0.1\"",
     "build": "tsc --noEmit && vite build",
     "start": "node --import tsx server/index.ts",
     "test": "node --import tsx --test tests/*.test.ts"
